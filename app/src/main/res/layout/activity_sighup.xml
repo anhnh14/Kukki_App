@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sigh Up"
+        android:textSize="40sp"
+        android:id="@+id/textView4" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:paddingRight="52dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="52dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/edt_sighup_name"
+            android:hint="Your name" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/edt_sighup_pass1"
+            android:hint="Password"
+            android:inputType="textPassword" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/edt_sighup_pass2"
+            android:hint="Re-Password"
+            android:inputType="textPassword" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/edt_sighup_email"
+            android:hint="Email" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:background="@drawable/btn_sighup"
+            android:id="@+id/btn_sighup_commit" />
+
+    </LinearLayout>
+</LinearLayout>

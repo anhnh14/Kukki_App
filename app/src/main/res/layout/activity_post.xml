@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:weightSum="1"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:weightSum="1"
+        android:paddingRight="15dp"
+        android:layout_weight="0.077"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="0.681"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/post_back"
+                android:id="@+id/img_post_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:text="THÊM CÔNG THỨC"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:id="@+id/textView3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="0.319"
+            android:layout_width="0dp"
+            android:gravity="center|right"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/post_cancel"
+                android:layout_marginRight="25dp"
+                android:id="@+id/imageView" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/post_btn_ok"
+                android:id="@+id/img_post_ok" />
+            <!--
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/post_btn_ok"
+                            android:text=""
+                            android:id="@+id/button" />-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="0.923"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:padding="15dp"
+                        android:textStyle="italic"
+                        android:background="@drawable/edt_post_style"
+                        android:id="@+id/edt_title"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Tên công thức..." />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/img_recipe_cover_3"
+                            android:id="@+id/post_img_recipe_cover" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+                        <EditText
+                        android:inputType="textMultiLine"
+                        android:lines="8"
+                        android:minLines="3"
+                        android:gravity="top|left"
+                            android:textStyle="italic"
+                            android:padding="10dp"
+                        android:maxLines="10"
+                        android:background="@drawable/edt_post_style"
+                        android:id="@+id/edt_description"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:scrollbars="vertical"
+                            android:hint="Miêu tả..." />
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="12dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_weight="0.5"
+                            android:gravity="left|center_vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent">
+
+                            <EditText
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edt_post_style"
+                                android:id="@+id/edt_time_finish"
+                                android:textStyle="italic"
+                                android:padding="5dp"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textSize="12sp"
+                                android:hint="Thời gian..." />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="bottom"
+                                android:layout_marginLeft="2dp"
+                                android:text="phút"
+                                android:textColor="#7f8c8d"
+                                android:id="@+id/textView5" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:gravity="right|bottom"
+                            android:layout_height="fill_parent">
+                            <EditText
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edt_post_style"
+                                android:id="@+id/edt_kcal"
+                                android:textStyle="italic"
+                                android:padding="5dp"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textSize="12sp"
+                                android:hint="Năng lượng..." />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="bottom"
+                                android:layout_marginLeft="2dp"
+                                android:text="kcal"
+                                android:textColor="#7f8c8d"
+                                android:id="@+id/textView55" />
+                            </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="12dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent">
+
+                            <Spinner
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:prompt="@string/post_spinner_style"
+                                android:id="@+id/spinner_style" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent">
+                            <Spinner
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:prompt="@string/post_spinner_area"
+                                android:id="@+id/spinner_area" />
+                            </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NGUYÊN LIỆU"
+                            android:textColor="#7f8c8d"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:id="@+id/textView6" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/content_2"
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_margin="20dp"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:id="@+id/content_3"
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:gravity="center"
+                            android:layout_marginTop="12dp"
+                            android:layout_height="wrap_content">
+
+                            <Button android:id="@+id/btn_add_m"
+                                android:layout_height="37dp"
+                                android:layout_width="37dp"
+                                android:background="@drawable/btn_post_add_m"
+                                android:freezesText="true"
+                                android:editable="false" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CHẾ BIẾN"
+                            android:textColor="#7f8c8d"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:id="@+id/textView7" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/content_1"
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"></LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <Button
+                                android:layout_width="37dp"
+                                android:layout_height="37dp"
+                                android:text=""
+                                android:background="@drawable/btn_post_add_m"
+                                android:id="@+id/btn_post_add_step" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

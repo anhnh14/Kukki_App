@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ecf0f1"
+    android:layout_weight="1"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="0.392"
+        android:weightSum="1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="0.72"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/profileAvatar"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:scaleType="fitCenter"
+                    />
+
+<!--
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/img_avatar"
+                    android:background="@drawable/no_avatar"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+-->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="11dp"
+            android:orientation="vertical"
+            android:layout_weight="0.28"
+            android:gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ĐỖ MINH TRÍ"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="134 quan tâm bạn"
+                android:textSize="10sp"
+                android:id="@+id/tv_slidemenu_followed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="351 công thức"
+                android:textSize="10sp"
+                android:id="@+id/tv_slidemenu_receipt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="0.608"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv_slidemenu" />
+    </LinearLayout>
+</LinearLayout>
